@@ -15,6 +15,11 @@
 //   document.body.insertBefore(newDiv, currentDiv); 
 // }
 
+// Set up!?
+var a_canvas = document.getElementById("a");
+var context = a_canvas.getContext("2d");
+
+
 document.body.onload = addElement;
 
 function addElement () { 
@@ -35,5 +40,7 @@ function addElement () {
   document.body.insertBefore(newDiv, currentDiv); 
 }
 
+
+// while loop 
 
 

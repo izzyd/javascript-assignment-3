@@ -22,14 +22,17 @@ function addElement () {
   // and give it some content 
   var view = document.createElement("div"); 
   document.body.appendChild(view); 
-  var grass = document.createElement("grass"); 
+  var grass = document.createElementNS("grass"); 
   view.appendChild(grass); //add the...to the newly created div. 
-  var sun = document.createElement("sun");
+  var sun = document.createElementNS("sun");
   view.appendChild(sun); 
 
-//   // add the newly created element and its content into the DOM 
-//   var currentDiv = document.getElementById("div1"); 
-//   document.body.insertBefore(newDiv, currentDiv); 
+  // add the newly created element and its content into the DOM 
+  var currentDiv = document.getElementById("grass"); 
+  document.body.insertBefore(newDiv, currentDiv); 
+
+    var currentDiv = document.getElementById("sun"); 
+  document.body.insertBefore(newDiv, currentDiv); 
 }
 
 

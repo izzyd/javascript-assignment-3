@@ -24,30 +24,65 @@
 
 document.body.onload = addElement;
 
-function addElement () { 
-  // create a new div element 
-  // and give it some content 
-  var view = document.createElement("div"); 
-  view.className = "view";
-  document.body.appendChild(view); 
+function addElement() {
+    // create a new div element 
+    // and give it some content 
+    var view = document.createElement("div");
+    view.className = "view";
+    document.body.appendChild(view);
 
-  var grass = document.createElement("div"); 
-  grass.className = "grass";
-  view.appendChild(grass); //add the...to the newly created div. 
+    var grass = document.createElement("div");
+    grass.className = "grass";
+    view.appendChild(grass); //add the...to the newly created div. 
 
-  var sun = document.createElement("div");
-  sun.className = "sun";
-  view.appendChild(sun); 
+    var sun = document.createElement("div");
+    sun.className = "sun";
+    view.appendChild(sun);
 
-//   // add the newly created element and its content into the DOM ?
-//   var currentDiv = document.getElementById("grass"); 
-//   document.body.insertBefore(newDiv, currentDiv); 
+    //   // add the newly created element and its content into the DOM ?
+    //   var currentDiv = document.getElementById("grass"); 
+    //   document.body.insertBefore(newDiv, currentDiv); 
 
-//     var currentDiv = document.getElementById("sun"); 
-//   document.body.insertBefore(newDiv, currentDiv); 
+    //     var currentDiv = document.getElementById("sun"); 
+    //   document.body.insertBefore(newDiv, currentDiv); 
 }
 
-
 // while loop 
+var ray1 = document.createElement("div");
+ray1.className = "ray1";
+sun.appendChild(ray1);
+//view.appendChild(ray1);
+// view.appendChild(sun); 
 
+var ray2 = document.createElement("div");
+ray2.className = "ray2";
+sun.appendChild(ray2);
+
+var ray3 = document.createElement("div");
+ray2.className = "ray3";
+sun.appendChild(ray3);
+
+var ray4 = document.createElement("div");
+ray2.className = "ray4";
+sun.appendChild(ray4);
+
+var ray5 = document.createElement("div");
+ray2.className = "ray5";
+sun.appendChild(ray5);
+
+var i = 0;
+while (i < 1) {
+    sun.appendChild(ray1);
+    sun.appendChild(ray2);
+    sun.appendChild(ray3);
+    sun.appendChild(ray4);
+    sun.appendChild(ray5);
+    i++;
+}
+//hmm...rays not working :/ 
+
+
+var mountain = document.createElement("div");
+mountain.className = "mountain";
+view.appendChild(mountain); 
 
